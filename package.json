@@ -1,0 +1,17 @@
+{
+  "name": "artgroup",
+  "version": "1.0.0",
+  "description": "recruitment task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kacper Radzik",
+  "license": "ISC",
+  "dependencies": {
+    "hello-world-npm": "^1.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.66.0"
+  }
+}

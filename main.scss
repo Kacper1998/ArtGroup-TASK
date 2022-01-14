@@ -1,0 +1,361 @@
+@import './_variables.scss';
+
+
+@mixin heading {
+  color: #3E4555;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 34px;
+}
+@mixin hover {
+color: $bg-color;
+background-color: $color1;
+border: none;
+}
+@mixin stylefooter {
+color: #8D97AD;
+font-size: 16px;
+font-family: 'Lato', sans-serif;
+}
+@mixin circlestyle {
+height: 88px;
+width: 88px;
+background-color: #F8F9FA;
+border-radius: 50%;
+display: flex; /* or inline-flex */
+align-items: center; 
+justify-content: center;
+color: $color2;
+font-size: 36px;
+font-weight: bold;
+font-family: 'Lato', sans-serif;
+margin: 0 auto;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.header {
+    width: 1920px;
+    height: 1080px;
+    border: 1px solid $bg-color;
+    background-color: $bg-color;
+    background-image: url("scisssors.png"), url("green.png");
+    background-position: -8px 40px, 1180px 370px;
+    background-repeat: no-repeat, no-repeat;
+
+
+    &__heading {
+      @include heading;
+      margin-top: 280px;
+    }
+}
+  .middlesection {
+    display: inline-block;
+    width: 1502px;
+    height: 380px;
+    margin-left: 140px;
+    margin-top: 148px;
+    &__text {
+      float: left;
+    &--latintext1 {
+      font-size: 16px;
+      color: #8D97AD;
+      font-family: $font-family2;
+    }
+    &--latintext2 {
+      font-family: $font-family1;
+      font-size: 27px;
+      color: #3E4555;
+    }  
+    }
+    &__image {
+      float: right;
+      width: 100%;
+      max-width: 513px;
+      height: 380px;
+      width: 513px;
+    }
+  }
+.allcards {
+  width: 1600px;
+  padding: 5px 5px 5px 5px;
+}
+.card{
+  background-color: red;
+  height:350px;
+  margin:0;
+  box-sizing:border-box;
+  padding:5px;
+  border:2px solid black;
+  margin-top: 100px;
+  padding: 0 5px 0 5px;
+}
+.circle {
+  @include circlestyle;
+  &__text {
+    @include stylefooter;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+.mainsection {
+  width: 1920px;
+  height: 2100px;
+  background-color: $bg-color2;
+  background-image: url("Inteligentny\ obiekt\ wektorowy.png");
+  background-position: 90px 1870px;
+    background-repeat: no-repeat;
+  &__text1 {
+    @include heading;
+    padding-top: 64px;
+  }
+  &__text2 {
+    padding-top:10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    text-align: center;
+    color: #3E4555;
+  }
+  &__wrapper {
+    width: 1367px;
+    height: 87px;
+    display: table;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+
+    &--first {
+      width: 277px;
+      height: 87px;
+      color: $color2;
+      background-color: $bg-color2;
+      border: 2px solid $color2;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'Lato', sans-serif;
+      border-radius: 5px;
+    }
+    &--first:hover {
+      @include hover;
+    }
+
+    &--second {
+      width: 277px;
+      height: 87px;
+      color: $color2;
+      background-color: $bg-color2;
+      border: 2px solid $color2;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'Lato', sans-serif;
+      border-radius: 5px;
+    }
+    &--second:hover {
+      @include hover;
+    }
+
+    &--third {
+      width: 277px;
+      height: 87px;
+      color: $color2;
+      background-color: $bg-color2;
+      border: 2px solid $color2;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'Lato', sans-serif;
+      border-radius: 5px;
+    }
+    &--third:hover {
+      @include hover;
+    }
+  }
+  &__text3 {
+    padding-top: 180px;
+    font-size: 16px;
+    color: #8D97AD;
+    font-family: $font-family2;
+    text-align: center;
+  }
+  &__btn {
+    height: 44px;
+    width: 159px;
+    color: #FFFFFF;
+    background-color: $color1;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    font-weight: bold;
+    display: table;
+    margin: 0 auto;
+    margin-top: 75px;
+  }
+  &__text4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    text-align: center;
+    padding-top: 120px;
+    color: #3E4555;
+  }
+}
+
+.footer {
+  width: 1920px;
+  height: 267px;
+  background-color: $bg-color;
+  &__up {
+    height: 130px;
+    width: 1650px;
+    margin: auto;
+    margin-top: 40px;
+   &--text1 {
+    list-style-type: none;
+    @include stylefooter;
+   } 
+  }
+  &__down {
+    width: 1650px;
+    height: 40px;
+    margin-top: 50px;
+    &--lefttext {
+      @include stylefooter;
+      float: left;
+      margin-left: 130px;
+      list-style-type: none;
+    }
+    &--righttext {
+      @include stylefooter;
+      float: right;
+      list-style-type: none;
+      margin-right: 140px;
+    }
+  }
+  &__list li {
+    float: left;
+  }
+  &__list {
+    list-style-type: none;
+    margin-left: -65px;
+    margin-top: 12px;
+    overflow: hidden;
+    background-color: white;
+
+  &--edition {
+    display: block;
+    text-align: center;
+    padding: 16px 30px 1px 65px;
+    text-decoration: none;
+    @include stylefooter;
+  } 
+  &--socialmedia {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    @include stylefooter;
+    margin-left: 200px;
+  } 
+  &--socialmedia img {
+    margin-left: 10px;
+  }
+  }
+}
+#fb {
+  margin-left: 800px;
+}
+
+//RWD Code
+
+@media only screen and (max-width: 1000px) {
+  .header__heading {
+    float: left;
+    margin-left: 60px;
+  }
+  .mainsection__text1 {
+    float: left;
+    margin-left: 60px;
+  }
+  .mainsection__text2 {
+    float: left;
+    margin-left: 60px;
+  }
+  .mainsection__text3{
+    float: left;
+    margin-left: 60px;
+  }
+  .mainsection__btn {
+    float: left;
+    margin-left: 60px;
+    margin-top: 150px;
+  }
+  .mainsection__text4 {
+    float: left;
+    margin-left: 60px;
+  }
+  .middlesection__text--latintext1 {
+    font-size: 15px;
+    float: left;
+    max-width: 100%;
+}
+  .middlesection__text--latintext2 {
+  font-size: 15px;
+  float: left;
+  padding-top: 40px;
+  max-width: 100%;
+}
+
+  .middlesection__image {
+    display: none;
+  }
+  .header__heading {
+    padding-left: 90px;
+    font-size: 20px;
+  }
+  .mainsection{
+    height: 3400px;
+  }
+  .footer__down--righttext {
+    float: left;
+    margin-left: 20px;
+    flex-direction: column;
+  }
+  .footer__list--socialmedia {
+    float: left;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .mainsection__wrapper {
+    flex-direction: column;
+    width: 400px;
+    padding-top: 10px;
+  }
+  .allcards {
+    float: left;
+    padding-left: 10px;
+  }
+}
+
+ 

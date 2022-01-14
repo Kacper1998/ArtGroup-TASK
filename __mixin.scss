@@ -1,0 +1,31 @@
+@mixin heading {
+    color: #3E4555;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 34px;
+}
+@mixin hover {
+color: $bg-color;
+background-color: $color1;
+border: none;
+}
+@mixin stylefooter {
+color: #8D97AD;
+font-size: 16px;
+font-family: 'Lato', sans-serif;
+}
+@mixin circlestyle {
+height: 88px;
+width: 88px;
+background-color: #F8F9FA;
+border-radius: 50%;
+display: flex; /* or inline-flex */
+align-items: center; 
+justify-content: center;
+color: $color2;
+font-size: 36px;
+font-weight: bold;
+font-family: 'Lato', sans-serif;
+margin: 0 auto;
+}
